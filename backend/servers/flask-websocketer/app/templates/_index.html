@@ -1,0 +1,12 @@
+{% extends "_base.html" %}
+
+{% block body %}
+<body>
+
+  {% include '_svgs.html' ignore missing %}
+  {% include '_specific.html' ignore missing %}
+  {% include '_dev_bundle.html' ignore missing %}
+  {% include '_body.html' ignore missing %}
+
+</body>
+{% endblock %}

@@ -1,0 +1,26 @@
+{
+	"backend": {
+		"serversByName": {
+			"flask-websocketer": {
+				"docker": {
+					"imagesByName": {
+						"current": {
+							"version": "0.1"
+						}
+					}
+				},
+				"abbreviation": "wbs",
+				"runsByTypeName": {
+					"localhost": {
+						"host": "localhost",
+						"port": "5001"
+					}
+				}
+			}
+		}
+	},
+	"pip": "/usr/local/bin/pip",
+	"python": "/usr/local/bin/python",
+	"templateNames": [
+	]
+}

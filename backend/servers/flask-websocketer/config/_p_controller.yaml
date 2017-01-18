@@ -1,0 +1,36 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: $(run.tag)
+  namespace: default
+  labels:
+    k8s-app: $(run.tag)
+spec:
+  replicas: 1
+  selector:
+    k8s-app: $(run.tag)
+  template:
+    metadata:
+      labels:
+        k8s-app: $(run.tag)
+    spec:
+      nodeName: $(type.subDomain).$(kubernetes.nodeDomain)
+      containers:
+        - name: $(run.tag)
+          image: $(registry.host):$(registry.port)/$(run.tag):$(current.version)
+          imagePullPolicy: Always
+          ports:
+            - name: server
+              containerPort: $(run.port)
+          env:
+            - name: APP_NAME
+              value: "$(run.tag)"
+            - name: VIRTUAL_HOST
+              value: "$(run.host)"
+            - name: VIRTUAL_PORT
+              value: "$(run.port)"
+            - name: VIRTUAL_NAME
+              value: "$(run.virtualName)"
+          resources:
+            limits:
+              memory: 1G

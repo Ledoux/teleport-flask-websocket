@@ -1,0 +1,7 @@
+{
+	"name": "teleport-flask-websocket",
+	"publishConfig": {
+		"registry": "https://npm-registry.corp.snips.net"
+	},
+	"version": "0.1.0"
+}
