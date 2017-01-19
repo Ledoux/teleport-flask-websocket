@@ -1,13 +1,8 @@
-# teleport-flask-websocket
+# Teleport flask websocket
+A [Teleport](https://github.com/snipsco/teleport) backend template to build a flask server based on sockets.
 
-This is a template from the app https://github.com/snipsco/teleport, that helps you to
-build a flask server (based on sockets) that is automatically deployed on a certain docker/kubernetes
-config.
-
-You can test yourself with
+## How to use it
+Simply add it to the list of templates. For instance:
 ```
-tpt -c --project my-app --templates teleport-flask-websocket,teleport-snips
+tpt -c --project my-app --templates teleport-flask-websocket,teleport-heroku
 ```
-and then follow these instructions https://github.com/snipsco/teleport/blob/master/README.md#start-a-new-project
-
-See for instance how this was used to build our benchmark dashboard https://github.com/snipsco/snips-sdk-benchmark
