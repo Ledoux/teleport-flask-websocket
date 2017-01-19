@@ -1,7 +1,7 @@
 {
 	"backend": {
 		"serversByName": {
-			"flask-websocketer": {
+			"flask-websocket": {
 				"docker": {
 					"imagesByName": {
 						"current": {
