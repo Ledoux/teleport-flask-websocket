@@ -3,5 +3,5 @@
 	"publishConfig": {
 		"registry": "https://npm-registry.corp.snips.net"
 	},
-	"version": "0.1.0"
+	"version": "0.1.1"
 }
