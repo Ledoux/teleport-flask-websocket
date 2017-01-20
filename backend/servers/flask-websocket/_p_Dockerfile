@@ -1,0 +1,14 @@
+FROM $[registry.url]/$[base.tag]:$[base.version]
+MAINTAINER $[maintainer.name] $[maintainer.email]
+
+ADD . /opt/docker/
+
+# extra configs come here with special ones defined in the .teleport
+# dockerEnv and some from the app automatically
+$[dockerExtraConfig]
+
+EXPOSE $[run.port]
+
+RUN sh scripts/install.sh
+
+CMD sh scripts/$[type.name]_start.sh
