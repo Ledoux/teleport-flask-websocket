@@ -1,3 +1,3 @@
 git add .
 git commit -m "push to heroku"
-git push $[type.name] master
+git push $[type.name] master -f
