@@ -1,4 +1,7 @@
 {
+	"author": "The Snips Tooling Team",
+	"license": "MIT",
+	"description": "Teleport backend template to build a flask server based on sockets",
 	"name": "teleport-flask-websocket",
 	"publishConfig": {
 		"registry": "https://npm-registry.corp.snips.net"
