@@ -44,8 +44,7 @@ app.config['HOST_DIR'] = "./" if app.config['TYPE'] != 'localhost' else os.path.
 #
 flask_env = {
     "SITE_NAME": app.config["SITE_NAME"],
-    "URL": app.config["URL"],
-    "WEB": app.config["WEB"]
+    "URL": app.config["URL"]
 }
 
 #
