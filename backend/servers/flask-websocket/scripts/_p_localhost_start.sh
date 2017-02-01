@@ -9,4 +9,3 @@ if [ "$MODE" != "localhost" ] ; then
 else
   $[manageExtraConfig] python scripts/manage.py
 fi
-i
