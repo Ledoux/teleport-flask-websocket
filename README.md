@@ -6,7 +6,7 @@
     <img src="icon.png" alt="icon" title="made by @cecilesnips"/>
   </td>
   <td>
-    <img src="teleport-express-websocket.png" alt="icon" title="made by @cecilesnips"/>
+    <img src="teleport-flask-websocket.png" alt="icon" title="made by @cecilesnips"/>
   </td>
   <td>
     A <a href="https://github.com/snipsco/teleport"> Teleport </a> backend template to build a flask server based on sockets.
