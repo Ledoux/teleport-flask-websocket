@@ -3,6 +3,7 @@
 #
 from flask import Flask,render_template
 from flask_socketio import SocketIO,send,emit
+import json
 import os
 
 #
@@ -45,7 +46,7 @@ app.config['HOST_DIR'] = "./" if app.config['TYPE'] != 'localhost' else os.path.
 #
 flask_env = {
     "SITE_NAME": app.config["SITE_NAME"],
-    "templates": app.config["TEMPLATES"],
+    "templates": json.loads(app.config["TEMPLATES"]),
     "URL": app.config["URL"]
 }
 
