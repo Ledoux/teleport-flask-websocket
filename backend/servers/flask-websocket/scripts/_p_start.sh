@@ -1,2 +1,2 @@
 #!/bin/sh
-gunicorn --config config/$[type.name]_guwsgi.ini app:app
+$[manageExtraConfig] export URL=$[run.url] && gunicorn --config config/$[type.name]_guwsgi.ini app:app

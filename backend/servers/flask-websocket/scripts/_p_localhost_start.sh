@@ -5,7 +5,7 @@ else
   VIRTUAL_ENV_OPTION=""
 fi
 if [ "$MODE" != "localhost" ] ; then
-  $[manageExtraConfig] gunicorn $VIRTUAL_ENV_OPTION --config config/localhost_guwsgi.ini app:app
+  $[manageExtraConfig] export URL=$[run.url] && gunicorn $VIRTUAL_ENV_OPTION --config config/localhost_guwsgi.ini app:app
 else
-  $[manageExtraConfig] python scripts/manage.py
+  $[manageExtraConfig] export URL=$[run.url] && python scripts/manage.py
 fi
