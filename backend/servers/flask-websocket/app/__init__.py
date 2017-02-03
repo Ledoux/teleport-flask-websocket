@@ -28,6 +28,7 @@ def test_ping(*args):
 default = {
     'DATA': "localhost",
     'SITE_NAME': "",
+    "TEMPLATES": [],
     'TYPE': "localhost",
     'URL': "http://localhost:5000"
 }
@@ -44,6 +45,7 @@ app.config['HOST_DIR'] = "./" if app.config['TYPE'] != 'localhost' else os.path.
 #
 flask_env = {
     "SITE_NAME": app.config["SITE_NAME"],
+    "templates": app.config["TEMPLATES"],
     "URL": app.config["URL"]
 }
 
