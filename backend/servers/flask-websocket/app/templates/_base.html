@@ -9,6 +9,10 @@
 
     <title>{% block title %}{{SITE_NAME}}{% endblock %}</title>
 
+    <script>
+      window.TELEPORT_WELCOME = {% JSON.stringify(TELEPORT_WELCOME) %}
+    </script>
+
   </head>
 
   {% block body %}{% endblock %}

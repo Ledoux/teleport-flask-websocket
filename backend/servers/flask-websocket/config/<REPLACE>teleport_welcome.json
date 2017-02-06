@@ -1,0 +1,4 @@
+{
+  "templates": $[welcome.templatesJSON],
+  "servers": $[welcome.serversJSON]
+}
