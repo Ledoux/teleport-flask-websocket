@@ -1,3 +1,69 @@
 <div id="app_div">
-  <img width='100%' height='500px' src="/static/images/flask.png" />
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+  <style>
+    .teleport {
+      font-family: Apercu;
+      font-size: 60px;
+      font-weight: 500;
+      color: #4c4c4c;
+    }
+    .teleport__logo {
+      padding-top: 125px;
+    }
+    .teleport__logo__img {
+      width: 200px;
+      height: 200px;
+    }
+    .teleport__text {
+      font-size: 50px;
+    }
+    .teleport__text__href {
+      color: #1acfff;
+      text-decoration:none;
+    }
+    .teleport__templates {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .teleport__footer {
+      font-size: 25px;
+      margin-left: auto;
+      margin-right: auto;
+      width: 100%;
+    }
+  </style>
+  <div class="teleport center p2"/>
+    <div class="teleport__logo mb3">
+      <img class="teleport__logo__img" src="/static/images/teleport.png" />
+    </div>
+    <h2 class="mb1">
+      Welcome!
+    </h2>
+    <p class="teleport__text mb3">
+      This app was made using
+      <a
+        class="teleport__text__href"
+        href="https://github.com/snipsco/teleport"
+        target="_blank"
+      > Teleport
+      </a>
+    </p>
+    <div class="teleport__templates p2">
+      <div class="flex justify-center items-center">
+      {% for template in TELEPORT_WELCOME.templates %}
+        <div class="mr2">
+           <a
+            title="{{template.name}}"
+            href="{{template.gitUrl}}">
+              <img src="{{template.iconUrl}}" />
+           </a>
+       </div>
+      {% endfor %}
+      </div>
+    </div>
+    <div class="teleport__footer">
+        From the Snips Tooling Team
+    </div>
+  </div>
 </div>

@@ -19,8 +19,5 @@
 			}
 		}
 	},
-	"pip": "/usr/local/bin/pip",
-	"python": "/usr/local/bin/python",
-	"templateNames": [
-	]
+	"iconUrl": "https://raw.githubusercontent.com/snipsco/teleport-flask-websocket/master/teleport-flask-websocket.png"
 }
