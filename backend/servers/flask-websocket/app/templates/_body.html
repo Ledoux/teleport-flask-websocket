@@ -28,11 +28,9 @@
     }
     .teleport__footer {
       font-size: 25px;
-      position: absolute;
       margin-left: auto;
       margin-right: auto;
       width: 100%;
-      bottom: 30px;
     }
   </style>
   <div class="teleport center p2"/>
@@ -48,13 +46,12 @@
         class="teleport__text__href"
         href="https://github.com/snipsco/teleport"
         target="_blank"
-      >
-        Teleport
+      > Teleport
       </a>
     </p>
     <div class="teleport__templates p2">
       <div class="flex justify-center items-center">
-      {% for template in templates %}
+      {% for template in teleport.templates %}
         <div class="mr2">
            <a
             title="{{template.name}}"
@@ -66,7 +63,7 @@
       </div>
     </div>
     <div class="teleport__footer">
-        Copyright the Snips Tooling Team
+        Made by the Snips Tooling Team With Love
     </div>
   </div>
 </div>
