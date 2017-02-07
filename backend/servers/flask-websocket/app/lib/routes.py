@@ -1,4 +1,5 @@
 from flask import render_template
+import json
 
 def routes_with_app(app):
     INDEX_HTML_NAME = '_index.html' if app.config['TYPE'] == 'localhost' else '_index_prod.html'
