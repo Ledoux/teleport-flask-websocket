@@ -6,6 +6,7 @@ def routes_with_app(app):
     context = {
         "SITE_NAME": app.config["SITE_NAME"],
         "TELEPORT_WELCOME": app.config["TELEPORT_WELCOME"],
+        "TELEPORT_WELCOME_STRING": json.dumps(app.config["TELEPORT_WELCOME"]),
         "URL": app.config["URL"]
     }
 
