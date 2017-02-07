@@ -14,7 +14,7 @@ spec:
       labels:
         k8s-app: $[run.tag]
     spec:
-      nodeName: $[type.subDomain].$[kubernetes.nodeDomain]
+      nodeName: $[type.infraName].$[kubernetes.nodeDomain]
       containers:
         - name: $[run.tag]
           image: $[registry.url]/$[run.tag]:$[current.version]
