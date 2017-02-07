@@ -13,9 +13,9 @@ def config_with_app (app):
     app.config['CONFIG_DIR'] = os.path.join(app.config['APP_DIR'], '../config')
     teleport_dir = os.path.join(app.config['CONFIG_DIR'], 'teleport_welcome.json')
     if os.path.isfile(teleport_dir):
-        app.config['teleport_welcome'] = json.load(open(teleport_dir, 'r'))
+        app.config['TELEPORT_WELCOME'] = json.load(open(teleport_dir, 'r'))
     else:
-        app.config['teleport_welcome'] = {
+        app.config['TELEPORT_WELCOME'] = {
             "templates": [],
             "servers": []
         }
