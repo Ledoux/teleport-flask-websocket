@@ -3,10 +3,10 @@
 
 <table>
   <td>
-    <img src="icon.png" alt="icon" title="made by @cecilesnips"/>
+    <img src="https://raw.githubusercontent.com/snipsco/teleport-express-webrouter/master/icon.png" alt="icon" title="made by @cecilesnips"/>
   </td>
   <td>
-    <img src="teleport-flask-websocket.png" alt="icon" title="made by @cecilesnips"/>
+    <img src="https://raw.githubusercontent.com/snipsco/teleport-flask-websocket/master/icon.png" alt="icon" title="made by @cecilesnips"/>
   </td>
   <td>
     A <a href="https://github.com/snipsco/teleport"> Teleport </a> backend template to build a flask server based on sockets.
